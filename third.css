@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #8a2be2, #ff4500); /* Reddish violet gradient */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#emotion {
+    font-weight: bold;
+    color: #ffd700; /* Gold color */
+}
+
+#song-name {
+    font-weight: bold;
+    color: #add8e6; /* Light blue color */
+}
+
+audio {
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+audio::-webkit-media-controls-panel {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-volume-slider {
+    color: #ff4500; /* Match play button and volume slider */
+}

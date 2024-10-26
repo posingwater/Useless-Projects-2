@@ -1,0 +1,46 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Questionnaire</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>നിങ്ങൾക്കും മൂഡ് ആകാം </h1>
+        <form id="questionForm">
+            <div>
+                <label>1.താങ്കൾ സന്തുഷ്ട്ടരാണോ ?</label><br>
+                <input type="radio" name="question1" value="yes"> Yes
+                <input type="radio" name="question1" value="no"> No
+            </div>
+
+            <div>
+                <label>2.ഒരു ചായ കുടിക്കാൻ താത്പര്യപ്പെടുന്നോ  ?</label><br>
+                <input type="radio" name="question2" value="yes"> Yes
+                <input type="radio" name="question2" value="no"> No
+            </div>
+
+            <div>
+                <label>3.ഒരു പ്രണയ പുഷ്പം ആഹണോ താങ്കൾ  ?</label><br>
+                <input type="radio" name="question3" value="yes"> Yes
+                <input type="radio" name="question3" value="no"> No
+            </div>
+        
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('submit').addEventListener('click', function() {
+            // Redirect to home page (you can replace 'home.html' with your actual homepage file)
+            window.location.href = 'third.html'; 
+        });
+    </script>
+     
+    <script src="second.js"></script>
+    <link rel="stylesheet" href="second.css"> 
+
+    
+</body>
+</html>
